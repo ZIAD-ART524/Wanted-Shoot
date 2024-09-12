@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../Images/R.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game_infos{
+    display: flex;
+    color: #f5f5f5;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.container{
+    height: 400px;
+    width: 500px;
+    border: 1px solid #3e2723;
+    cursor: crosshair;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#deb887;
+    border-radius: 6px;
+    overflow: hidden;
+}
+#target{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    transition: 0.25s;
+    animation: animateTarget 10s infinite;
+}
+button{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #3e2723;
+    border: 0;
+    color: #deb887;
+    border-radius: 6px;
+    cursor: pointer;
+}
+@keyframes animateTarget{
+    to{
+        transform: translate(-200px) rotate(90deg);
+    }
+}
